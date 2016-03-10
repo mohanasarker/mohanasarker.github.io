@@ -157,7 +157,7 @@ hr.small {
     position: relative;
     width: 100%;
     height: 80%;
-    background: url(../img/mohana_orig_ed2.jpg) no-repeat center center scroll;
+    background: url(../img/mohana_orig_ed3.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -244,11 +244,147 @@ footer {
 
 
 /*new by mourjo*/
+/*color1: #344459
+color2: #3399dc
+color3: #1caba5*/
 .bg-primary {
   color: #fff;
-  background-color: #669999;
+  background-color: #344459;
 }
 a.bg-primary:hover,
 a.bg-primary:focus {
-  background-color: #286090;
+  background-color: #344459;
+}
+
+.navbar-default{
+    text-align: center;
+    background:#336600;
+    border: 0;
+    /*box-shadow:none !important;*/
+    /*-webkit-box-shadow: none !important;*/
+}
+
+/*.navbar-fixed-top {
+    background-color:#00FFCC;
+        background-image: none;
+        width: 100%
+}*/
+
+.masthead {
+    margin: auto; 
+}
+
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  /*color: #fff; 
+  color: rgba(255,255,255,.75);*/
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (max-width: 500px) {
+  .center-img-div {
+    display: none;
+  }
+  .font-page-content-1 {
+    width: 100%;
+  }
+ }
+
+@media (max-width: 991px) {
+  .center-face {
+    width: 100%;
+  }
+ }
+
+@media (max-width: 767px) {
+  .large-section-text {
+    display: none;
+  }
+
+  .alt-text-small {
+    display: block;
+  }
+ }
+
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    /*position: fixed;*/
+    top: 0;
+  }
+  .mastfoot {
+    /*position: fixed;*/
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    /*vertical-align: middle;*/
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+
+  .center-face {
+    width:240px;
+  }
+
+  .alt-text-small {
+    display:none;
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 900px;
+  }
+
+  .center-face {
+    width:240px;
+  }
 }
